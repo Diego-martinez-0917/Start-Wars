@@ -1,0 +1,33 @@
+.container-List {
+  overflow: auto;
+  .table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 90%;
+    background-color: #7c84fa95;
+    font: 1.3em sans-serif;
+    border: 2px solid black;
+    border-collapse: collapse;
+    .table-head {
+      background-color: #0011ffde;
+      color: rgb(16, 15, 15);
+      th {
+        border: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+    }
+    .table-body {
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      tr:nth-child(even) {
+        background-color: #2836fab6;
+      }
+    }
+    @media (max-width: 650px) {
+      font: 0.9rem sans-serif;
+    }
+  }
+}

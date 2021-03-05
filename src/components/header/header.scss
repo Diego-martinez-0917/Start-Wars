@@ -1,0 +1,20 @@
+.header {
+  grid-area: Hea;
+  background-color: rgb(75, 75, 181);
+  display: inline-flex;
+  flex-direction: row;
+  padding-left: 15px;
+  width: 100vw;
+  margin-bottom: 10px;
+  & > h1 {
+    font-family: sans-serif;
+    font-size: x-large;
+  }
+  .logo {
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+    align-self: center;
+  }
+}

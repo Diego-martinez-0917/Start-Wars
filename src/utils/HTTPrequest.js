@@ -16,7 +16,9 @@ async function getPeopleData(url) {
       method: 'GET',
     });
     result = result.concat(response.data.results);
-    url = response.data.next;
+    url = response.data.next
+      ? response.data.next.replace('http', 'https')
+      : null;
   }
   return result;
 }

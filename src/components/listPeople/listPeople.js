@@ -1,5 +1,4 @@
 import React from 'react';
-import './listPeople.scss';
 
 export default function ListPeople({ data }) {
   return (

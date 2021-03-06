@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
-import './filters.scss';
 
 export default function Filters({ data, onFilterData }) {
   const [filters, setFilters] = useState({
@@ -43,25 +42,21 @@ export default function Filters({ data, onFilterData }) {
   function filterData() {
     let datafilter = data;
     if (filters.name) {
-      datafilter = datafilter.filter((element) =>
-        element.name.includes(filters.name)
-      );
+      datafilter = datafilter.filter((e) => e.name.includes(filters.name));
     }
 
     if (filters.gender) {
-      datafilter = datafilter.filter(
-        (element) => element.gender === filters.gender
-      );
+      datafilter = datafilter.filter((e) => e.gender === filters.gender);
     }
 
     if (filters.colorEye) {
-      datafilter = datafilter.filter((element) =>
-        element.eye_color.includes(filters.colorEye)
+      datafilter = datafilter.filter((e) =>
+        e.eye_color.includes(filters.colorEye)
       );
     }
     if (filters.colorHair) {
-      datafilter = datafilter.filter((element) =>
-        element.hair_color.includes(filters.colorHair)
+      datafilter = datafilter.filter((e) =>
+        e.hair_color.includes(filters.colorHair)
       );
     }
 

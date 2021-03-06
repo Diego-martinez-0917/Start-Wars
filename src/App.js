@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { useEffect, useState } from 'react';
 import { getPeople } from './utils/HTTPrequest';
 import Header from './components/header/header';

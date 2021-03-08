@@ -1,8 +1,10 @@
 import React from 'react';
+import ChartTest from './charttes';
 
 export default function ListPeople({ data }) {
   return (
     <div className="container-List">
+      <ChartTest data={data}/>
       <table className="table">
         <thead className="table-head">
           <tr>

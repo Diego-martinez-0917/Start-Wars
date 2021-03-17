@@ -1,5 +1,19 @@
 .container-List {
   overflow: auto;
+  .content-grafic {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      canvas {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
   .table {
     margin-left: auto;
     margin-right: auto;
@@ -9,6 +23,7 @@
     font: 1.3em sans-serif;
     border: 2px solid black;
     border-collapse: collapse;
+    overflow-x: auto;
     .table-head {
       background-color: #0011ffde;
       color: rgb(16, 15, 15);
